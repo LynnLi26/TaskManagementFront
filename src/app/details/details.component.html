@@ -1,0 +1,50 @@
+<div>
+    <div class="title">
+        Task Management System
+    </div>
+    <div>
+        <table>
+            <tr>
+                <td>
+                    <img src="{{'assets/images/'+quote.QuoteID+'.png'}}">
+                </td>
+            </tr>
+            <tr>
+                <h5 [ngStyle]="{'text-align': 'left'}">Quote ID</h5>
+                <td>
+                    <p>{{quote.QuoteID}}</p>
+                </td>
+            </tr>
+            <tr>
+                <h5>Quote Type</h5>
+                <td>
+                    <p>{{quote.QuoteType}}</p>
+                </td>
+            </tr>
+            <tr>
+                <h5>Sales Person</h5>
+                <td>
+                    <p>{{quote.Sales}}</p>
+                </td>
+            </tr>
+            <tr>
+                <h5>Premium Amount</h5>
+                <td>
+                    <p>{{quote.Premium}}</p>
+                </td>
+            </tr>
+            <tr>
+                <h5>Due Date</h5>
+                <td>
+                    <p>{{quote.DueDate}}</p>
+                </td>
+            </tr>
+            <tr>
+                <h5>Description</h5>
+                <td>
+                    <p>{{quote.Description}}</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,51 @@
+.container {
+    padding: 25px;   
+    box-shadow: 0.5px 0.5px 5px 5px rgb(218, 218, 218);
+}
+
+.title {
+    font-size: 24px;
+    padding-top: 20px;
+    color: rgb(38, 68, 165);
+}
+
+input[type=text], input[type=password] {   
+    width: 100%;   
+    margin: 8px 0;  
+    padding: 12px 20px;   
+    display: inline-block;   
+    border: none;   
+    border-bottom: 1px solid black;
+    box-sizing: border-box;   
+}  
+
+button { 
+    background-color: white;    
+    color: rgb(38, 68, 165);   
+    padding: 10px;   
+    margin: 10px 0px;   
+    border: 1px solid rgb(38, 68, 165);   
+    cursor: pointer;   
+}   
+
+/* .button:hover {
+    background-color:#002ead;
+    color: white;
+    transition: 0.7s;
+} */
+
+.go {
+    font-size:20px;
+    height: 50%;
+    width: 50%;
+    font-weight : bold ;
+    background-color:#002ead;
+    color: white;
+}
+.leave {
+    font-size:20px;
+    height: 50%;
+    width: 50%;
+    font-weight : bold ;
+    background-color: white;
+}

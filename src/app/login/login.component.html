@@ -1,0 +1,45 @@
+<div class="title">
+    Task Management System
+</div>
+<br>
+<div class="container">
+    <div style="display: inline;">
+        <!-- <button type="button" class="button" (click)="showRegister()" [ngStyle]="{'background-color': flag? 'rgb(38, 68, 165)' : 'white', 'color': flag? 'white':'rgb(38, 68, 165)'}">Login</button> -->
+        <button type="button" class="button" (click)="flag = !flag" [ngClass]="{'go':flag, 'leave':!flag}">Login</button>
+        <button type="button" class="button" (click)="flag = !flag" [ngClass]="{'go':!flag, 'leave':flag}">Register</button>
+        <!-- <button type="button" class="button" (click)="showRegister()" [ngStyle]="{'background-color': flag? 'white' : 'rgb(38, 68, 165)', 'color': flag? 'rgb(38, 68, 165)':'white'}">Register</button> -->
+    </div>
+    <div *ngIf="flag; else register_content">
+        <form #LoginForm = "ngForm" (ngSubmit)="Login(LoginForm)">
+            <div>
+                <input required type="text" id="username" name="username" [(ngModel)]="username" #name="ngModel" placeholder="Username*">
+                <div *ngIf="name.touched && name.invalid" class="alert">Username is required</div>
+            </div>
+            <div>
+                <input type="password" required id="psw" name="psw" [(ngModel)]="psw" #password="ngModel" placeholder="Password*">
+                <div *ngIf="password.touched && password.invalid" class="alert">Password is required</div>
+            </div>
+            <div>
+                <button type="submit" class="button">Login</button>
+            </div>
+        </form>    
+    </div>
+
+    <ng-template #register_content>
+        <form #registerForm = "ngForm" (ngSubmit)="register(registerForm)"> 
+            <div>
+                <input type="text" id="rgName" name="rgName" [(ngModel)]="rgName" placeholder="Username*">
+            </div>
+            <div>
+                <input type="password" id="rgpsw" name="rgpsw" [(ngModel)]="rgpsw" placeholder="Password*">
+            </div>
+            <div>
+                <input type="password" id="confmpsw" name="confmpsw" [(ngModel)]="confmpsw" placeholder="Confirm Password*">
+            </div>
+            <button type="submit">Register</button>
+        </form>
+    </ng-template>
+</div>
+
+
+
