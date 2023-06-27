@@ -1,0 +1,36 @@
+.title {
+    font-size: 24px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: rgb(38, 68, 165);
+}
+
+img {
+    max-width: 200px;
+    max-height: 200px;
+}
+table {
+    /* border: 1px solid grey; */
+    border-collapse: collapse; 
+    margin: auto;
+    width: 60%;
+}
+
+h5 {
+    font-weight: bold;
+    font-size: 15px;
+    color: rgb(38, 68, 165);
+}
+td {
+    /* border: 1px solid black; */
+    padding: 10px;
+    /* text-align: center; */
+}
+p {
+    font-size: 15px;
+    text-align: center;
+}
+h5, p {
+    display: inline-block;
+    vertical-align: top;
+}
